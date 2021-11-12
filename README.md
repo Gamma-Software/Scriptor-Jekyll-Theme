@@ -30,7 +30,7 @@ To set up Jekyll on local machine please follow the official documentation that 
 To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `bundle exec jekyll serve` to start the Jekyll server.
 
 Or simply start with docker.
-docker run --rm --volume="$PWD:/srv/jekyll" --publish [::1]:4000:4000 jekyll/jekyll ls -l && bundle install && bundle exec jekyll serve --trace
+docker run --restart=always --volume="/home/rudloff/sources/CapsuleScripts/servers/Scriptor-Jekyll-Theme:/srv/jekyll" --name travelblog -p 5000:4000 jekyll/jekyll:3.8 jekyll serve
 
 ### Manual Deployment
 
