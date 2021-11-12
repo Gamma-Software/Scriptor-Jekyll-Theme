@@ -6,13 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site language
-lang: en-US
+lang: fr-FR
 
 # Site title
-title: "Scriptor"
+title: "Capsule 2024"
 
 # A description of your site for meta tag, search engine results.
-description: "Scriptor is a minimal, clean, modern & responsive Jekyll theme for writers"
+description: "Capsule 2024 est le blog de voyage du tour du monde en 4x4 de Laurence & Emmanuel Rudloff"
 
 # The subpath of your site, e.g. /blog, for generating urls.
 baseurl: ""
@@ -28,26 +28,26 @@ google_analytics: ""
 
 # Site navigation - each item must have a title and a url.
 navigation:
-  - text: Home
+  - text: Acceuil
     url: /
-  - text: About
+  - text: A propos
     url: /about/
-  - text: Style Guide
-    url: /style-guide/
+  - text: Tracé
+    url: /trace/
   - text: Tags
     url: /tags/
-  - text: Download
-    url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
+  #- text: Download
+  #  url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
 
 # The shortname for your Disqus site to enable comments.
 disqus: justgoodthemes
 
 # Colors
-accent_color: '#2d72d9'
+accent_color: '#262626'
 
 # Site footer
 footer:
-  content: "&copy; Scriptor all rights reserved. Theme by [JustGoodThemes](https://www.justgoodthemes.com)."
+  content: "&copy; Capsule2024 all rights reserved. Theme by [JustGoodThemes](https://www.justgoodthemes.com)."
   has_social: true
 
 # Plugins
