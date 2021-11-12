@@ -29,6 +29,9 @@ To set up Jekyll on local machine please follow the official documentation that 
 
 To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `bundle exec jekyll serve` to start the Jekyll server.
 
+Or simply start with docker.
+docker run --rm --volume="$PWD:/srv/jekyll" --publish [::1]:4000:4000 jekyll/jekyll ls -l && bundle install && bundle exec jekyll serve --trace
+
 ### Manual Deployment
 
 Jekyll generates your static site to the **_site** directory by default. You can transfer the contents of this directory to almost any hosting provider to get your site live.
