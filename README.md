@@ -32,6 +32,8 @@ To run the theme locally, navigate to the theme directory and run `bundle instal
 Or simply start with docker.
 docker run --restart=always --volume="/home/rudloff/sources/CapsuleScripts/servers/Scriptor-Jekyll-Theme:/srv/jekyll" --name travelblog -p 5000:4000 jekyll/jekyll:3.8 jekyll serve
 
+Or build the docker with generate.sh script and start the docker compose in the Docker folder in CapsuleScripts.
+
 ### Manual Deployment
 
 Jekyll generates your static site to the **_site** directory by default. You can transfer the contents of this directory to almost any hosting provider to get your site live.
