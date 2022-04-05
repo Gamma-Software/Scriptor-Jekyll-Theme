@@ -26,12 +26,28 @@ favicon: images/favicon.png
 # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 google_analytics: ""
 
+# Liste des catégories
+collections:
+  category:
+    output: true # générer la page HTML
+    permalink: /:collection/:name/index.html
+    # exemple -> /category/informatique/index.html
+
+defaults:
+  - scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+      # layout utilisé -> _layouts/category.html
+
+
 # Site navigation - each item must have a title and a url.
 navigation:
+  - text: Construction
+    url: /category/construction/
   - text: Voyage
     url: /
-  - text: Construction
-    url: /construction/
   - text: A propos
     url: /about/
   - text: Tracé
@@ -71,3 +87,14 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
+
+# Keywords
+keywords:
+  - Blog
+  - Voyage
+  - RoadTrip
+  - Pays
+  - Découverte
+  - Discovery
+  - Road
+  - Route

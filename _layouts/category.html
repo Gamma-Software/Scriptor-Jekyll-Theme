@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
+<div class="site-description fadeInDown delay_05s">
+  <p>Construction de Capsule</p>
+</div><!-- .site-description -->
+<main class="main-content fadeInDown delay_075s">  
 
-<main class="main-content fadeInDown delay_075s">
-
-  {% for post in paginator.posts %}
+  {% for post in site.categories[page.category] %}
   <article class="post">
     <header class="post-header">
       <time class="post-date" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{post.date | date: "%B %-d, %Y" }}</time>
@@ -32,20 +34,5 @@ layout: default
     </div><!-- .post-content -->
   </article><!-- .post -->
   {% endfor %}
-
-  {% if paginator.total_pages > 1 %}
-  <nav class="pagination">
-    <h2 class="screen-reader-text">Posts navigation</h2>
-    <div class="nav-links">
-      {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | relative_url }}" class="newer-posts">&larr; Newer Posts</a>
-      {% endif %}
-      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | relative_url }}" class="older-posts">Older Posts &rarr;</a>
-      {% endif %}
-    </div>
-  </nav><!-- .pagination -->
-  {% endif %}
 
 </main><!-- .site-main -->
